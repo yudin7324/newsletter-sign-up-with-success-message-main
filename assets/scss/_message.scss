@@ -1,0 +1,53 @@
+@use 'vars' as *;
+
+.message {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: $color-white;
+  box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.25);
+  padding: 40px 24px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  @media (min-width: $small) {
+    border-radius: 36px;
+    height: 100%;
+    width: 100%;
+    max-width: 504px;
+    padding: 48px 64px;
+  }
+
+  &__image {
+    height: 64px;
+    width: 64px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 56px;
+    color: $color-dark-navy;
+    margin-top: 40px;
+  }
+
+  &__text {
+    line-height: 1.5;
+    color: $color-dark-navy;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}

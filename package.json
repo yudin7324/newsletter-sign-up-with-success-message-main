@@ -1,0 +1,13 @@
+{
+  "name": "newsletter-sign-up-with-success-message-main",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/styles.scss:./assets/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}

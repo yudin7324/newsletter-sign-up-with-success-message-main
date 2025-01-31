@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <script defer src="/assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <main class="page">
+            <div id="sign-in" class="sign-up-form">
+                <div class="sign-up-form__content">
+                    <h1 class="sign-up-form__title">Stay updated!</h1>
+                    <p class="sign-up-form__text">Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul class="sign-up-form__list">
+                        <li class="sign-up-form__list-item">Product discovery and building what matters</li>
+                        <li class="sign-up-form__list-item">Measuring to ensure updates are a success</li>
+                        <li class="sign-up-form__list-item">And much more!</li>
+                    </ul>
+                    <form id="form" class="sign-up-form__form" novalidate>
+                        <div class="sign-up-form__input">
+                            <div class="sign-up-form__input-wrap">
+                                <label for="email" class="sign-up-form__input-label">Email address</label>
+                                <span class="sign-up-form__input-error">Valid email required</span>
+                            </div>
+                            <input type="email" placeholder="email@company.com" id="email" class="sign-up-form__input-area">
+                        </div>
+                        <button type="submit" class="btn" aria-label="sub">
+                           <span>Subscribe to monthly newsletter</span>
+                        </button>
+                    </form>
+                </div>
+                <figure class="sign-up-form__image">
+                    <picture>
+                        <source media="(max-width: 991px)" srcset="/assets/images/illustration-sign-up-mobile.svg">
+                        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="form-image">
+                    </picture>
+                </figure>
+            </div>
+            <div id="message" class="message">
+                <figure class="message__image">
+                    <img src="/assets/images/icon-success.svg" alt="success">
+                </figure>
+                <div class="message__title">Thanks for subscribing!</div>
+                <p class="message__text">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+                <button class="message__btn btn" type="button" aria-label="success-message-btn">
+                    <span>Dismiss message</span>
+                </button>
+            </div>
+        </main>
+    </body>
+</html>
